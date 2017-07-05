@@ -4,20 +4,18 @@
         <script src="https://d3js.org/d3.v4.min.js"></script>
     </head>
     <body>
-        <svg id="svg" style="width:100%;height:800px">
-        </svg>
+        <svg id="svg" style="width:100%;height:800px"/>
     </body>
     <script>
+
         var svg = d3.select('#svg');
         
-        // head
         svg.append('circle')
            .attr('cx', 300)
            .attr('cy', 100)
            .attr('r', 50)
            .style('fill', 'green');
 
-        // neck 
         svg.append('line')
            .attr('x1', 300)
            .attr('y1', 150)
@@ -26,7 +24,6 @@
            .attr('stroke-width', 10)
            .style('stroke', 'green');
 
-        // body 
         svg.append('rect')
            .attr('x', 250)
            .attr('y', 170)
@@ -34,7 +31,6 @@
            .attr('height', 200)
            .style('fill', 'green');
 
-        // left arm
         svg.append('line')
            .attr('x1', 270)
            .attr('y1', 220)
@@ -43,7 +39,6 @@
            .attr('stroke-width', 10)
            .style('stroke', 'green');
 
-        // right arm 
         svg.append('line')
            .attr('x1', 330)
            .attr('y1', 220)
@@ -52,7 +47,6 @@
            .attr('stroke-width', 10)
            .style('stroke', 'green');
 
-        // left leg 
         svg.append('line')
            .attr('x1', 283)
            .attr('y1', 370)
@@ -61,7 +55,6 @@
            .attr('stroke-width', 10)
            .style('stroke', 'green');
         
-        // right leg 
         svg.append('line')
            .attr('x1', 317)
            .attr('y1', 370)
